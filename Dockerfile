@@ -1,4 +1,4 @@
-FROM php:cli
+FROM synopsis/php:cli
 
 RUN apt-get update && apt-get install -y supervisor && apt-get clean
 RUN mkdir -p /var/log/supervisor
